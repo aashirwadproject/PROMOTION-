@@ -260,15 +260,6 @@ export default function ClaimModal({
                     <MessageSquareCode className="w-4 h-4" />
                     <span>Share on WhatsApp (At Once)</span>
                   </button>
-
-                  <button
-                    onClick={onShare}
-                    className="w-full bg-zinc-900 border border-zinc-800 hover:text-white text-zinc-400 font-extrabold text-[11px] py-2 px-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer transition-all active:scale-98"
-                    id="btn-copy-modal-action"
-                  >
-                    <Send className="w-3.5 h-3.5" />
-                    <span>Copy Normal Share Link</span>
-                  </button>
                 </div>
 
                 <span className="text-[9.5px] text-zinc-500 text-center block font-bold uppercase tracking-tight">

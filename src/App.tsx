@@ -311,8 +311,7 @@ export default function App() {
               >
                 🇳🇵 {liveTickerPayouts[tickerIndex].name} claimed{' '}
                 <strong className="text-white">{liveTickerPayouts[tickerIndex].amount}</strong>{' '}
-                to <strong className="text-emerald-400">{liveTickerPayouts[tickerIndex].app}</strong>{' '}
-                • {liveTickerPayouts[tickerIndex].time}
+                to <strong className="text-emerald-400">{liveTickerPayouts[tickerIndex].app}</strong>
               </motion.div>
             </AnimatePresence>
           </div>
@@ -371,14 +370,7 @@ export default function App() {
               </span>
             </div>
 
-            {/* Progress gauge bar */}
-            <div className="w-full bg-zinc-950 h-2.5 rounded-full overflow-hidden border border-zinc-800">
-              <motion.div
-                className="h-full bg-emerald-500 rounded-full"
-                animate={{ width: `${progressPercent}%` }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-              />
-            </div>
+            {/* Progress gauge bar removed */}
 
             <p className="text-[10.5px] text-zinc-400 font-bold uppercase tracking-tight leading-relaxed">
               Unlock the massive payouts button by following each social asset below. Rs. 10 per active task.
@@ -410,15 +402,6 @@ export default function App() {
               </span>
             </div>
 
-            {/* Progress bar */}
-            <div className="w-full bg-zinc-950 h-2.5 rounded-full overflow-hidden border border-zinc-800">
-              <motion.div
-                className={`h-full ${shareCount === 10 ? 'bg-emerald-500' : 'bg-amber-500'} rounded-full`}
-                animate={{ width: `${(shareCount / 10) * 100}%` }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-              />
-            </div>
-
             <div className="flex flex-col gap-2">
               <button
                 type="button"
@@ -428,16 +411,6 @@ export default function App() {
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>Share 10 Friends on WhatsApp (At Once)</span>
-              </button>
-
-              <button
-                type="button"
-                id="btn-share-website-card"
-                onClick={handleShareWebsite}
-                className={`w-full py-2.5 px-4 rounded-xl font-extrabold text-[11px] uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all border border-zinc-800 hover:text-white text-zinc-400`}
-              >
-                <Share2 className="w-3.5 h-3.5" />
-                <span>{shareCount === 10 ? 'Link Copied (10/10 Completed)' : 'Copy Normal Website Link'}</span>
               </button>
             </div>
 
