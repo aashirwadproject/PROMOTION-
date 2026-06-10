@@ -1,0 +1,6 @@
+{
+  "name": "Social Follow Rewards",
+  "description": "A mobile-first promotional app to follow social handles on Instagram, TikTok, and Facebook and earn 10 NPR rewards per completed follow task.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
